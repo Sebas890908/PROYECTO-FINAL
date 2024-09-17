@@ -1,0 +1,192 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eaf2f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #0a2f3d;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #21f0ff;
+}
+
+/* Home (Sección Principal) */
+.hero {
+    background: linear-gradient(to bottom right, rgba(0,150,199,0.7), rgba(26,83,92,0.7)), 
+                url('../assets/images/solar-panels.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+    color: #21f0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #e0ffff;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #21f0ff;
+    color: #0a2f3d;
+    border-radius: 30px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 0 20px rgba(33, 240, 255, 0.5);
+}
+
+.hero button:hover {
+    background-color: #1bdde4;
+    transform: scale(1.05);
+}
+
+/* Animación de brillo */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #21f0ff, 0 0 20px #21f0ff, 0 0 30px #1bdde4;
+    }
+    to {
+        text-shadow: 0 0 20px #21f0ff, 0 0 30px #21f0ff, 0 0 40px #1bdde4;
+    }
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0a2f3d;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    color:#555;
+    margin-bottom: 20px;
+}
+
+/* Galería de Proyectos */
+.project-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-gallery img {
+    width: 45%;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0a2f3d;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #21f0ff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #21f0ff;
+    color: #0a2f3d;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #1bdde4;
+}
+
+/* Footer */
+footer {
+    background: #0a2f3d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-gallery img {
+        width: 100%;
+    }
+}

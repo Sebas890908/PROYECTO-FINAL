@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Fotovoltaica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Calcula tu Sistema Fotovoltaico</h1>
+        <form id="calcForm">
+            <label for="consumo">Consumo de energía mensual (kWh):</label>
+            <input type="number" id="consumo" name="consumo" required>
+            
+            <label for="horasSol">Horas de sol por día:</label>
+            <input type="number" id="horasSol" name="horasSol" required>
+
+            <label for="potenciaPanel">Potencia de los paneles solares (W):</label>
+            <input type="number" id="potenciaPanel" name="potenciaPanel" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sebastián Serna</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
